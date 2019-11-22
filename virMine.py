@@ -514,7 +514,7 @@ def find_best(output_path):
 #RUN GLIMMER
 def run_glimmer(contig_file,output_path):
     #predict the genes
-    glimmer_command='./g3-iterated-viral.csh '+contig_file+' '+output_path+'/temp/orfs'
+    glimmer_command='/g3-iterated-viral.csh '+contig_file+' '+output_path+'/temp/orfs'
     print(glimmer_command)
     os.system(glimmer_command)
 
